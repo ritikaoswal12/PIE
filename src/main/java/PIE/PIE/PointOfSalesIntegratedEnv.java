@@ -1,5 +1,7 @@
 package PIE.PIE;
 
+import java.util.List;
+
 public interface PointOfSalesIntegratedEnv {
 	public void createBranch(Branch branch);
 	public Branch getbBranch(int branchId);
@@ -11,7 +13,7 @@ public interface PointOfSalesIntegratedEnv {
 	public void createTransaction(Transaction transaction);
 	public void addOrderLineToTransaction(int transactionId, OrderLine orderLine);
 	public void completeOrder(int transactionId);
-	public string trackTransaction(int transactionId);
+	public String trackTransaction(int transactionId);
 }
 
 
